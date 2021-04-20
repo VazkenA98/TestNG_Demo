@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/TestNG_Demo">
+        <classes>
+            <class name="TestNG.SimpleTest">
+                <methods>
+                    <include name="func1"/>
+                    <include name="func2"/>
+                    <include name="func3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ParametersTest">
+        <parameter name="a" value="2"/>
+        <parameter name="b" value="5"/>
+        <parameter name="word" value="hello java"/>
+        <classes>
+            <class name= "TestNG.ParametersTest"/>
+        </classes>
+    </test>
+
+    <test name="GroupTest">
+        <groups>
+            <run>
+                <include name="Group A"/>
+                <include name="Group B"/>
+                <exclude name="Group C"/>
+            </run>
+        </groups>
+        <classes>
+            <class name= "TestNG.GroupTest"/>
+        </classes>
+    </test>
+</suite>
