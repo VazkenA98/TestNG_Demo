@@ -14,6 +14,7 @@ public class SimpleTest {
     public void func2(){
         System.out.println("func2");
     }
+
     @Test(priority = 2)
     public void func3(){
         System.out.println("func3");

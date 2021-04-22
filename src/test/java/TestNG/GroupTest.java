@@ -2,7 +2,7 @@ package TestNG;
 
 import org.testng.annotations.Test;
 
-public class GroupTest {
+public class GroupTest extends BaseGroupTest{
 
     @Test(groups= {"Group A"})
     public void testcase1()
@@ -21,6 +21,7 @@ public class GroupTest {
     {
         System.out.println("Test case belonging to both Group A and Group B");
     }
+
     @Test(groups= {"Group C"})
     public void testcase4()
     {

@@ -21,7 +21,7 @@
         </classes>
     </test>
 
-    <test name="GroupTest">
+    <!--<test name="GroupTest">
         <groups>
             <run>
                 <include name="Group A"/>
@@ -32,5 +32,5 @@
         <classes>
             <class name= "TestNG.GroupTest"/>
         </classes>
-    </test>
+    </test>-->
 </suite>
