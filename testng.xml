@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="D:/TestNG_Demo">
+    <!--<test verbose="2" preserve-order="true" name="D:/TestNG_Demo" parallel="methods">
         <classes>
             <class name="TestNG.SimpleTest">
                 <methods>
-                    <include name="func1"/>
                     <include name="func2"/>
-                    <include name="func3"/>
+                    <exclude name="func3"/>
                 </methods>
             </class>
         </classes>
-    </test>
-    <test name="ParametersTest">
+    </test>-->
+  <!--  <test name="ParametersTest">
         <parameter name="a" value="2"/>
         <parameter name="b" value="5"/>
         <parameter name="word" value="hello java"/>
         <classes>
             <class name= "TestNG.ParametersTest"/>
         </classes>
-    </test>
+    </test>-->
 
-    <!--<test name="GroupTest">
+    <test name="GroupTest">
         <groups>
             <run>
+                <exclude name="Group B"/>
                 <include name="Group A"/>
-                <include name="Group B"/>
                 <exclude name="Group C"/>
             </run>
         </groups>
         <classes>
             <class name= "TestNG.GroupTest"/>
         </classes>
-    </test>-->
+    </test>
 </suite>
